@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Files-->
+  <link rel='stylesheet' href='/Content/style.css' />
+  <link rel = 'stylesheet' href = '/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel = 'stylesheet' href = '/@fortawesome/fontawesome-free/css/all.min.css'/>
+  <title><%= title %></title>
+</head>
+
+<body>
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-cloud fa-beat-fade"></i> Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/itemlist"><i class="fa-solid fa-handshake-angle fa-beat-fade"></i> Volunteer</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-solid fa-bell fa-beat-fade"></i> Contact Us</a>
+        </li>
+
+        <!-- Logic For Login/Logout -->
+        <% if(typeof displayName =='string' && displayName) { %>
+          <li class = "nav-item d-flex align-items-center">
+            <a href = "/" class = "nav-link active">
+              <div class = "d-flex align-items-center">
+                <i class = "fa-regular fa-snowflake fa-beat-fade me-2"></i>
+                Hey, <%= displayName %>
+              </div>
+            </a>
+          </li>
+
+          <li class = "nav-item">
+            <a href="/logout" class = "nav-link active">
+            <i class = "fa-solid fa-location-pin-lock fa-beat-fade"></i> Logout</a>
+          </li>
+
+        <% } else { %>
+          <li class = "nav-item">
+            <a href="/login" class = "nav-link active">
+            <i class = "fa-solid fa-pen-nib fa-beat-fade"></i>Login</a>
+          </li>
+        <% } %>
+        // End Of Logic 
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- NavBar End -->
+
+<main>
+  <br>
+  <br>
+  <br>
+    <div class="jumbotron jumbotron-fluid text-center bg-dark text-white mb-0"> <!-- Font Editing -->
+        <div class="container-fluid p-6">
+            <h1 class="display-8 font-weight-bold"> Contact Us...</h1>
+            <p class="lead font-weight-bold"> We'll Get Back To You As Soon As Possible 😊 </p>
+            <br>
+        </div>
+    </div>
+  <br>
+
+  <!-- Contact Form Section -->
+  <section class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Fill Out The Form Below...</h2>
+            <!-- Contact Form -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-like Section -->
+  <section class="container mt-4">
+    <div class="row">
+
+      <!-- Left Side with Links -->
+      <div class="col-md-6">
+        <div class="card bg-dark text-white">
+          <div class="card-body">
+            <h5 class="card-title">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="/" class="text-white">Home</a></li>
+              <li><a href="/itemlist" class="text-white">Volunteer</a></li>
+              <li><a href="/contact" class="text-white">Contact Us</a></li>
+              <li> </li>
+              <li> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <!-- Right Side with Website Information -->
+      <div class="col-md-6">
+        <div class="card bg-dark text-white">
+          <div class="card-body">
+            <h5 class="card-title">Website Information</h5>
+            <ul class="list-unstyled">
+              <li>Vaibhav's Portfolio</li>
+              <li>Email at: portfolio@gmail.com</li>
+              <li>Contact No.: (437) 123 4567</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fixed-bottom bg-dark text-white">
+    <div class="container-fluid text-center p-3">
+        <p>&copy; 2023 Vaibhav Patel. All rights reserved <i class="bi bi-bootstrap"></i></p>
+    </div>
+  </footer>
+
+</main>
+  
+  <!-- Script Files-->
+  <script src = "/Scripts/app.js"></script>
+  <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src = "/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
