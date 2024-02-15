@@ -24,44 +24,32 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-cloud fa-beat-fade"></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-house"></i> Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/itemlist"><i class="fa-solid fa-handshake-angle fa-beat-fade"></i> Volunteer</a>
+          <a class="nav-link active" aria-current="page" href="/itemlist"><i class="fa-solid fa-graduation-cap"></i> Our School</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-solid fa-bell fa-beat-fade"></i> Contact Us</a>
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-user-plus"></i> Admissions</a>
         </li>
 
-        <!-- Logic For Login/Logout -->
-        <% if(typeof displayName =='string' && displayName) { %>
-          <li class = "nav-item d-flex align-items-center">
-            <a href = "/" class = "nav-link active">
-              <div class = "d-flex align-items-center">
-                <i class = "fa-regular fa-snowflake fa-beat-fade me-2"></i>
-                Hey, <%= displayName %>
-              </div>
-            </a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-book-open"></i> Academics</a>
+        </li>
 
-          <li class = "nav-item">
-            <a href="/logout" class = "nav-link active">
-            <i class = "fa-solid fa-location-pin-lock fa-beat-fade"></i> Logout</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-medal"></i> Sports & Arts</a>
+        </li>
 
-        <% } else { %>
-          <li class = "nav-item">
-            <a href="/login" class = "nav-link active">
-            <i class = "fa-solid fa-pen-nib fa-beat-fade"></i>Login</a>
-          </li>
-        <% } %>
-        // End Of Logic 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home"><i class="fa-regular fa-newspaper"></i> News</a>
+        </li>
 
-      </ul>
-    </div>
-  </div>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-regular fa-comment-dots"></i> Contact Us</a>
+        </li>
 </nav>
 
 <!-- NavBar End -->
