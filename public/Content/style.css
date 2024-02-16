@@ -67,3 +67,36 @@ body {
     background-color: #00CED1; /* Bright turquoise color */
 }
 
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.banner-content {
+    position: absolute;
+    left: 10%; /* Adjust as needed for left alignment */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.content-box {
+    background-color: rgba(64, 224, 208, 0.7); /* Light turquoise color with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.text-white {
+    color: white;
+    font-weight: bold;
+    font-size: 24px; /* Adjust font size as needed */
+}
