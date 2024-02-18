@@ -67,12 +67,6 @@ body {
     background-color: #00CED1; /* Bright turquoise color */
 }
 
-
-.mySlides {
-    display: none;
-}
-
-
 .banner {
     position: relative;
     width: 100%;
@@ -104,3 +98,8 @@ body {
     font-weight: bold;
     font-size: 24px; /* Adjust font size as needed */
 }
+
+.mySlides {
+    display: none;
+}
+
