@@ -67,6 +67,12 @@ body {
     background-color: #00CED1; /* Bright turquoise color */
 }
 
+
+.mySlides {
+    display: none;
+}
+
+
 .banner {
     position: relative;
     width: 100%;
@@ -74,18 +80,16 @@ body {
 }
 
 .banner-image {
-    width: 100%;
-    display: block;
-    height: auto;
+    width: 50%; /* Adjust the width of the image */
+    float: left; /* Float the image to the left */
 }
 
 .banner-content {
-    position: absolute;
-    left: 10%; /* Adjust as needed for left alignment */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 80%; /* Adjust width as needed */
-    text-align: center;
+    position: relative;
+    float: left; /* Float the content box to the left */
+    width: 50%; /* Adjust the width of the content box */
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box; /* Include padding and border in the box's total width */
 }
 
 .content-box {
@@ -98,10 +102,5 @@ body {
 .text-white {
     color: white;
     font-weight: bold;
-    font-size: 16px; /* Adjust font size as needed */
+    font-size: 24px; /* Adjust font size as needed */
 }
-
-.mySlides {
-    display: none;
-}
-
